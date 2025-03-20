@@ -34,3 +34,25 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+// Disable right-click
+document.addEventListener("contextmenu", (event) => event.preventDefault());
+
+// Disable keyboard shortcuts for DevTools
+document.addEventListener("keydown", (event) => {
+    if (
+        event.key === "F12" || // Disable F12
+        (event.ctrlKey && event.shiftKey && event.key === "I") || // Disable Ctrl+Shift+I
+        (event.ctrlKey && event.shiftKey && event.key === "J") || // Disable Ctrl+Shift+J
+        (event.ctrlKey && event.key === "U") // Disable Ctrl+U (view source)
+    ) {
+        event.preventDefault();
+    }
+});
+
+// Disable Inspect Element on right-click for all elements
+document.addEventListener("mousedown", function (event) {
+    if (event.button === 2) {
+        alert("Inspecting is disabled on this website!");
+        event.preventDefault();
+    }
+});
