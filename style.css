@@ -1,0 +1,365 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body {
+    background-color: #0a0a0a;
+    color: #0f0;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid #0f0;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.logo {
+    font-size: 24px;
+    text-shadow: 0 0 10px #0f0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0f0;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: white;
+    text-shadow: 0 0 5px white;
+}
+
+/* Hero Section */
+.hero {
+    margin-top: 100px;
+    font-size: 24px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.glitch {
+    font-size: 36px;
+    color: #0f0;
+    text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Cyber Theme */
+body {
+    background-color: black;
+    color: #00ff00;  /* Neon green */
+    font-family: 'Courier New', monospace;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav a {
+    color: #00ff00;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: cyan;
+    text-shadow: 0 0 10px cyan;
+}
+
+/* Glowing Text Effect */
+h1 {
+    font-size: 40px;
+    text-shadow: 0 0 15px lime;
+}
+
+/* Buttons */
+button {
+    background: transparent;
+    border: 2px solid #00ff00;
+    color: #00ff00;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #00ff00;
+    color: black;
+    text-shadow: 0 0 10px black;
+}
+/* Link Hover Effects */
+nav a:hover {
+    color: cyan;
+    text-shadow: 0 0 10px cyan;
+    transform: scale(1.1);
+}
+
+/* Smooth Page Transitions */
+* {
+    transition: all 0.3s ease-in-out;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+    color: #ffffff;
+}
+
+/* Header */
+header {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 255, 153, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #00ff99;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid #00ff99;
+}
+
+/* Blog Container */
+.blog-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+/* Blog Post */
+.blog-post {
+    background: #222;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    box-shadow: 0px 5px 15px rgba(0, 255, 153, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.blog-post:hover {
+    transform: translateY(-10px);
+}
+
+.blog-post img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blog-post h2 {
+    color: #00ff99;
+}
+
+.blog-post p {
+    font-size: 1em;
+    color: #ccc;
+}
+
+.blog-post a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #00ff99;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.blog-post a:hover {
+    background: #00cc77;
+}
+/* ABOUT PAGE STYLING */
+.about-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 255, 153, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.about-container:hover {
+    transform: translateY(-5px);
+}
+
+.about-content {
+    margin-bottom: 20px;
+}
+
+.about-content h2 {
+    color: #00ff99;
+    font-size: 1.8em;
+}
+
+.about-content p, .about-content ul {
+    color: #ccc;
+    font-size: 1em;
+}
+
+.about-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-content ul li {
+    padding: 5px 0;
+}
+
+/* HOVER EFFECT FOR LINKS */
+nav ul li a {
+    color: #00ff99;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff0099;
+}
+body {
+    background-color: #000;
+    color: #00ff99;
+    font-family: 'Courier New', monospace;
+}
+/* Only apply this GIF on the home page */
+.home::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif') no-repeat center center;
+    background-size: cover;
+    opacity: 0.2; /* Adjust opacity as needed */
+    z-index: -1;
+}
+.glitch {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    animation: glitch 1.5s infinite;
+}
+
+/* Glitch animation effect */
+@keyframes glitch {
+    0% { text-shadow: 4px 0px red, -4px 0px cyan; }
+    25% { text-shadow: -4px 0px red, 4px 0px cyan; }
+    50% { text-shadow: 4px 0px cyan, -4px 0px red; }
+    75% { text-shadow: -4px 0px cyan, 4px 0px red; }
+    100% { text-shadow: 4px 0px red, -4px 0px cyan; }
+}
+nav ul li a {
+    color: #00ff99;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff00ff;
+    text-shadow: 0px 0px 10px #ff00ff;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #00ff99;
+    border: 2px solid #00ff99;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #00ff99;
+    color: #000;
+    box-shadow: 0px 0px 10px #00ff99;
+}
+body {
+    background-color: #222121; /* Light background */
+    color: #e4d9d9; /* Darker text */
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #008000; /* Dark green for a subtle look */
+    text-shadow: none; /* Remove the neon glow */
+}
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: rgb(222, 214, 214);
+}
+
+button {
+    background-color: #008000;
+    color: rgb(45, 41, 41);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #005500;
+}
